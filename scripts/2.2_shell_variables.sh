@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# SHELL variables are in uppercase
+# SHELL variables are in all Uppercase
 echo "USER: $USER"
 echo "HOME directory: $HOME"
 echo "HOSTNAME: $HOSTNAME"
