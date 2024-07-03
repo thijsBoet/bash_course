@@ -1,5 +1,11 @@
-#!bin/bash
+#!/bin/bash
 
-echo $PATH
+# SHELL variables are in uppercase
+echo "USER: $USER"
+echo "HOME directory: $HOME"
+echo "HOSTNAME: $HOSTNAME"
+echo "HOSTTYPE: $HOSTTYPE"
+echo "PS1 (Prompt String Terminal): $PS1"
+echo "PATH directories are: $PATH"
 
 exit 0
