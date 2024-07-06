@@ -10,5 +10,16 @@
 # Usage
 # backup
 
-tar -cvf ~/bash_course/my_backups/backup+"$(date +%d-%m-%Y_%H-%M-%S)".tar ~/* 2>/dev/null
+echo "Hello ${USER^},"
+echo "I will now backup your home directory, $HOME"
+
+currentDir=$(pwd)
+
+echo "You are running this script from $currentDir"
+echo "Therefore, I will save the backup in $currentDir"
+
+tar -cf $currentDir/my_backups_"$(date +%d-%m-%Y_%H-%M-%S)".tar $HOME/* 2>/dev/null
+
+echo "Backup Completed Successfully."
+
 exit 0
